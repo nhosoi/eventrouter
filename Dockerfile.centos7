@@ -3,7 +3,7 @@ FROM centos:centos7
 LABEL maintainer="OpenShift Development <dev@lists.openshift.redhat.com>" \
       com.redhat.component="openshift-eventrouter-docker" \
       name="openshift3/eventrouter" \
-      version="v3.7.0" \
+      version="v3.11.0" \
       architecture=x86_64
 
 USER root
