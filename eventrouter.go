@@ -20,7 +20,7 @@ import (
 	"fmt"
 
 	"github.com/golang/glog"
-	"github.com/heptiolabs/eventrouter/sinks"
+	"github.com/openshift/eventrouter/sinks"
 	"github.com/prometheus/client_golang/prometheus"
 
 	"k8s.io/api/core/v1"
@@ -97,7 +97,7 @@ func (er *EventRouter) Run(stopCh <-chan struct{}) {
 	defer utilruntime.HandleCrash()
 	defer glog.Infof("Shutting down EventRouter")
 
-	glog.Infof("Starting EvenRouter")
+	glog.Infof("Starting EventRouter")
 
 	// here is where we kick the caches into gear
 	if !cache.WaitForCacheSync(stopCh, er.eListerSynched) {

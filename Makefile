@@ -13,7 +13,7 @@
 # limitations under the License.
 
 TARGET = eventrouter
-GOTARGET = github.com/heptiolabs/$(TARGET)
+GOTARGET = github.com/openshift/$(TARGET)
 BUILDMNT = /go/src/$(GOTARGET)
 REGISTRY ?= gcr.io/heptio-images
 VERSION ?= v0.2
